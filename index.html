@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Ingress XM Anomaly 20 Oct 2018 Palma - Mallorca</title>
+    <style>
+        #splash {
+            margin-bottom: 16px;
+        }
+        a {
+            color: var(--green);
+        }
+        a:hover {
+            color: var(--green);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Ingress XM Anomaly 20 Oct 2018 Palma - Mallorca</h1>
+    <div class="text-center">
+        <img id="splash" class="img-fluid" src="img/firstannouncement.jpg" alt="20 Oct 2018 - Palma - Mallorca">
+    </div>
+    <ul class="nav nav-tabs" id="descTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="descTab-en-tab" data-toggle="tab" href="#descTab-en" role="tab" aria-controls="home" aria-selected="true">English</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="descTab-ca-tab" data-toggle="tab" href="#descTab-ca" role="tab" aria-controls="profile" aria-selected="false">Català</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="descTab-es-tab" data-toggle="tab" href="#descTab-es" role="tab" aria-controls="contact" aria-selected="false">Castellano</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="descTab-en" role="tabpanel" aria-labelledby="descTab-en-tab">
+            <p>Join the fight in Palma and help us win this site!</p>
+            <p>Thousands of portals are awaing for you in one of the most touristic cities in the world.</p>
+            <p>Enjoy our 23ºC in October, with no crowds!</p>
+            <p>Don't miss this unique opportunity of enjoying our island.</p>
+            <p>More info soon.</p>
+        </div>
+        <div class="tab-pane fade" id="descTab-ca" role="tabpanel" aria-labelledby="descTab-ca-tab">
+            <p>Uneix-te a la lluita a Palma i ajuda'ns a guanyar!</p>
+            <p>Milers de portals t'esperen en una de les ciutats més turístiques del món.</p>
+            <p>Gaudeix dels nostres 23ºC en octubre, sense multituds!</p>
+            <p>No et perdis aquesta oportunitat única de gaudir de la nostra illa.</p>
+            <p>Més informació aviat.</p>
+        </div>
+        <div class="tab-pane fade" id="descTab-es" role="tabpanel" aria-labelledby="descTab-es-tab">
+            <p>¡Únete a la lucha en Palma y ayúdanos a ganar!</p>
+            <p>Miles de portales te esperan en una de las ciudades más turísticas del mundo.</p>
+            <p>¡Disfruta de nuestros 23ºC en octubre, sin multitudes!</p>
+            <p>No te pierdas esta oportunidad única de disfrutar de nuestra isla.</p>
+            <p>Más información pronto.</p>
+        </div>
+    </div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+    $(function() {
+        // Try to get language
+        var AVAILABLE = ['en', 'ca', 'es'];
+        var language;
+        if (navigator.languages) {
+            navigator.languages.some(function (lang) {
+                lang = lang.split('-')[0];
+                if (AVAILABLE.indexOf(lang) !== -1) {
+                    $('#descTab-' + lang + '-tab').tab('show');
+                    return true;
+                }
+            });
+        }
+    });
+</script>
+</body>
+</html>

@@ -15,7 +15,7 @@ Version: 1.0
 #ABOUT US
 #VIDEO
 #SCHEDULE
-#SPEAKERS
+#swag
 #VENUE
 #PRICING PLANS
 #REGISTER FORM
@@ -220,7 +220,7 @@ button:focus {
 /* HEADER */
 /*--------------------*/
 
-#mu-hero {
+#home {
 	background-image: url("assets/images/head-featured-bg.jpg");
 	display: inline;
 	float: left;
@@ -356,7 +356,7 @@ button:focus {
 /* MENU */
 /*--------------------*/
 
-#mu-hero .navbar-default {
+#home .navbar-default {
 	background-color: #fff;
 	border-color: #e7e7e7;
 	padding: 5px 0;
@@ -371,7 +371,7 @@ button:focus {
 	top: 0px;
 }
 
-#mu-hero .navbar-default .navbar-brand {
+#home .navbar-default .navbar-brand {
 	padding: 15px 15px;
 	font-size: 28px;
 	line-height: 20px;
@@ -397,7 +397,7 @@ button:focus {
 /*--------------------*/
 
 
-#mu-about {
+#about {
 	background-color: #fff;
 	display: inline;
 	float: left;
@@ -564,7 +564,7 @@ button:focus {
 /* EVENT SCHEDULE */
 /*--------------------*/
 
-#mu-schedule {
+#schedule {
 	background-color: #f8f8f8;
 	display: inline;
 	float: left;
@@ -716,7 +716,7 @@ button:focus {
 /*--------------------*/
 
 
-#mu-speakers {
+#swag {
 	background-color: #fff;
 	display: inline;
 	float: left;
@@ -790,7 +790,7 @@ button:focus {
 /* VENUE */
 /*--------------------*/
 
-#mu-venue {
+#map {
 	display: inline;
 	float: left;
 	width: 100%;
@@ -816,7 +816,7 @@ button:focus {
 	display: inline;
 	float: left;
 	width: 100%;
-	padding: 10% 5%;
+	padding: 5% 5%;
 	color: #fff;
 }
 
@@ -963,7 +963,7 @@ button:focus {
 /* REGISTER */
 /*--------------------*/
 
-#mu-register {
+#register {
 	background-image: url("assets/images/register-bg.jpg");
 	background-position: center center;
 	background-size: cover;
@@ -974,7 +974,7 @@ button:focus {
 	width: 100%;
 }
 
-/*#mu-register::before {
+/*#register::before {
 	background: rgba(0,0,0,0.9);
 	bottom: 0;
 	content: '';
@@ -1771,3 +1771,58 @@ button:focus {
 	
 }
 
+.about-text {
+	display: none;
+}
+
+.about-text.active {
+	display: block;
+}
+
+#map-container {
+	height: 450px;
+}
+
+.venue-details-container {
+	display: flex;
+	align-items: center;
+	height: 450px;
+}
+
+.map-button-group {
+	margin: 10px;
+	cursor: pointer;
+}
+
+.map-button {
+	float: left;
+	position: relative;
+	text-align: center;
+	color: rgb(86, 86, 86);
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 11px;
+	background-color: rgb(255, 255, 255);
+	padding: 8px;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+	min-width: 28px;
+}
+
+.map-button.active {
+	color: rgb(0, 0, 0);
+	font-weight: 500;
+}
+
+.map-button:hover {
+	color: rgb(0, 0, 0);
+	background-color: rgb(238, 238, 238);
+}
+
+.map-button-group .map-button:first-child {
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.map-button-group .map-button:last-child {
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}

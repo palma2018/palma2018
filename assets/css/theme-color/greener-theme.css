@@ -31,7 +31,7 @@ Author URI : http://www.markups.io/
 .mu-logo,
 .mu-logo:hover,
 .mu-logo:focus,
-#mu-hero .navbar-default .navbar-brand,
+#home .navbar-default .navbar-brand,
 .mu-navbar .mu-menu li a:hover,
 .mu-navbar .mu-menu li a:focus,
 .mu-single-event .mu-event-time {
@@ -40,7 +40,7 @@ Author URI : http://www.markups.io/
 
 .mu-speakers-slider .slick-next,
 .mu-speakers-slider .slick-prev,
-#mu-venue,
+#map,
 .mu-navbar .navbar-toggle,
 .mu-navbar .navbar-toggle:hover,
 .mu-navbar .navbar-toggle:focus,
@@ -90,16 +90,16 @@ Author URI : http://www.markups.io/
 	border: 2px solid #3fc35f;
 }
 
-#mu-register {
+#register {
 	color: white;
 }
 
-#mu-register .mu-title {
+#register .mu-title {
 	color: white;
 }
 
 
-#mu-register::before {
+#register::before {
 	background-color: rgba(63, 195, 95, 0.7);/* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, rgba(40, 125, 61, 0.7), rgba(63, 195, 95, 0.7));  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, rgba(40, 125, 61, 0.7), rgba(63, 195, 95, 0.7));

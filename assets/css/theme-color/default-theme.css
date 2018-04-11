@@ -30,7 +30,7 @@ Author URI : http://www.markups.io/
 .mu-logo,
 .mu-logo:hover,
 .mu-logo:focus,
-#mu-hero .navbar-default .navbar-brand,
+#home .navbar-default .navbar-brand,
 .mu-navbar .mu-menu li a:hover,
 .mu-navbar .mu-menu li a:focus,
 .mu-single-event .mu-event-time {
@@ -39,7 +39,7 @@ Author URI : http://www.markups.io/
 
 .mu-speakers-slider .slick-next,
 .mu-speakers-slider .slick-prev,
-#mu-venue,
+#map,
 .mu-popular-price .mu-price-tag,
 .mu-navbar .navbar-toggle,
 .mu-navbar .navbar-toggle:hover,
